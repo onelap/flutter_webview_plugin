@@ -3,7 +3,10 @@
 
 static FlutterMethodChannel *channel;
 
+@interface FLTWKWebView : WKWebView
+@end
+
 @interface FlutterWebviewPlugin : NSObject<FlutterPlugin>
 @property (nonatomic, retain) UIViewController *viewController;
-@property (nonatomic, retain) WKWebView *webview;
+@property (nonatomic, retain) FLTWKWebView *webview;
 @end
